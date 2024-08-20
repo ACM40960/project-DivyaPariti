@@ -13,7 +13,6 @@
 ![VS2015_Runtime](https://img.shields.io/badge/vs2015_runtime-14.40.3.x-683D87?logo=visualstudio&logoColor=white)
 ![Wheel](https://img.shields.io/badge/wheel-0.43.0-007ACC?logo=python&logoColor=white)
 ![ca-certificates](https://img.shields.io/badge/ca--certificates-2024.7.2-3DDC84?logo=ssl&logoColor=white)
-
 ![Jupyter Notebook](https://img.shields.io/badge/Jupyter%20Notebook-71%25-F37626?logo=jupyter&logoColor=white)
 ![SCSS](https://img.shields.io/badge/SCSS-19%25-C76494?logo=sass&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-5.5%25-563D7C?logo=css3&logoColor=white)
