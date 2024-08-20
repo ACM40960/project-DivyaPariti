@@ -3,6 +3,24 @@
   <img src="https://github.com/user-attachments/assets/7c8b3d55-c512-41b9-b050-c6f2bf1c1349" alt="ASD title" width="400"/>
 </div>
 
+![Python](https://img.shields.io/badge/python-3.9.19-3776AB?logo=python&logoColor=white)
+![Pip](https://img.shields.io/badge/pip-24.2-2C8EBB?logo=pypi&logoColor=white)
+![OpenSSL](https://img.shields.io/badge/openssl-3.0.14-8A2BE2?logo=openssl&logoColor=white)
+![SQLite](https://img.shields.io/badge/sqlite-3.45.3-003B57?logo=sqlite&logoColor=white)
+![Setuptools](https://img.shields.io/badge/setuptools-72.1.0-FFD43B?logo=python&logoColor=black)
+![Tzdata](https://img.shields.io/badge/tzdata-2024a-4A90E2?logo=timezone&logoColor=white)
+![VC](https://img.shields.io/badge/vc-14.40-555555?logo=visualstudio&logoColor=white)
+![VS2015_Runtime](https://img.shields.io/badge/vs2015_runtime-14.40.3.x-683D87?logo=visualstudio&logoColor=white)
+![Wheel](https://img.shields.io/badge/wheel-0.43.0-007ACC?logo=python&logoColor=white)
+![ca-certificates](https://img.shields.io/badge/ca--certificates-2024.7.2-3DDC84?logo=ssl&logoColor=white)
+
+![Jupyter Notebook](https://img.shields.io/badge/Jupyter%20Notebook-71%25-F37626?logo=jupyter&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-19%25-C76494?logo=sass&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-5.5%25-563D7C?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-3.7%25-F7DF1E?logo=javascript&logoColor=black)
+![Other](https://img.shields.io/badge/Other-0.8%25-D3D3D3?logo=other&logoColor=black)
+
+
 ## 📚 **Introduction**
 
 Autism Spectrum Disorder (ASD) is a developmental disorder that affects communication, behavior, and social interaction. Individuals with ASD may exhibit a wide range of abilities and challenges. Some common features include difficulty with social interactions, repetitive behaviors, and sensitivity to sensory input. However, the presentation of ASD varies greatly between individuals.
