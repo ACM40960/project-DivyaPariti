@@ -32,42 +32,107 @@ We analyze an eye-tracking dataset using enhanced image processing techniques to
 
 ![dataset](https://github.com/user-attachments/assets/4f84caae-71bb-4100-83c7-0856b17540c2)
 
-The dataset was meticulously preprocessed to optimize the training and evaluation of the deep learning models. The process involved several key steps:
+The dataset used in this project is a specialized collection of images intended for the classification of Autism Spectrum Disorder (ASD). It is organized to facilitate the training and evaluation of various deep learning models.
 
-  - **Data Splitting**: The dataset was initially split into training and validation sets, ensuring a balanced representation of classes in each subset.
+**🔑 Key Characteristics:**
 
-  - **Image Augmentation**:
-    - For the training set, images underwent augmentation to increase the model's robustness and generalization capabilities. This included:
-      - **Rescaling**: Standardizing pixel values.
-      - **Shearing**: Applying affine transformations to simulate perspective shifts.
-      - **Zooming**: Randomly zooming in on images to enhance feature detection.
-    - For the test set, a simpler preprocessing was applied, involving only rescaling to maintain consistency during model evaluation.
+**📂 Source and Structure:** The dataset, referred to as "AutismDataset" in the notebook, is structured into directories, with subfolders representing different classes. This structure allows for easy ingestion into deep learning models using image data generators.
+
+The data is initially stored in a consolidated folder and is then split into training and validation sets using the splitfolders library. The split ratio used is 70% for training and 30% for validation.
+  
+  **1. 🖼️ Image Properties:**
     
-  - **Data Loading**: The preprocessed images were then loaded into the model pipeline using ImageDataGenerator, which facilitated real-time data augmentation during training.
-    - A target image size of 128x128 pixels was set, balancing the trade-off between computational efficiency and preserving critical visual features.
-    - This comprehensive setup enabled the effective training and evaluation of multiple deep learning models, ensuring that the models were exposed to a diverse range of image variations during the training phase while maintaining a consistent evaluation process.
+  - **📏 Image Size:** All images are resized to 128x128 pixels to ensure uniformity across the dataset, which is crucial for feeding the data into convolutional neural networks.
+    
+  - **🌟 Image Scaling:** The pixel values of the images are rescaled to a range of 0 to 1. This normalization helps stabilize the training process and improve the model's convergence.
+  
+  **2. 🔄 Data Augmentation:**
+    
+  - **Training Set:** Data augmentation techniques are applied to the training set to improve the generalization of the model. This includes shearing, zooming, and horizontal flipping, which artificially increases the variety of the training data and helps the model learn more robust features.
+    
+  - **Validation Set:** Only scaling is applied to the validation set, ensuring that the data remains representative of real-world conditions without introducing synthetic variations.
+  
+  **3. 🧩 Class Distribution:** The dataset is divided into different classes, each representing a specific category within the Autism Spectrum Disorder diagnosis. The exact classes are not detailed in the notebook, but they are structured to support a categorical classification task.
+This dataset is well-suited for training deep learning models aimed at diagnosing Autism Spectrum Disorder, with careful consideration given to data preparation and augmentation to maximize the performance of the models.
 
-## 📈 **Model Workflow**
+## 🔄 **Model Workflow**
+
 ![model workflow](https://github.com/user-attachments/assets/36f47ab8-a5cb-4d49-bba0-427da05da1e0)
+
+### 📝 **Overview:**
+This section outlines the specific steps followed in the deep learning workflow used in this project for Autism Spectrum Disorder classification, as implemented in the provided Jupyter Notebook.
+
+**1. 🗂️ Data Preparation:**
+The initial stage involves organizing and preprocessing the dataset:
+
+  - **📁 Data Splitting:** The dataset is divided into training and validation sets using the splitfolders library. This ensures a proper split between the data for training the model and validating its performance.
+  - **📏 Image Rescaling:** Images are scaled to a standard size of 128x128 pixels. This uniformity is crucial for feeding the data into the neural network.
+  - **🔄 Data Augmentation:** To enhance the training set, data augmentation techniques such as shearing, zooming, and horizontal flipping are applied. This helps the model generalize better by learning from a wider variety of data.
+
+**2. 🏗️ Model Architecture:** The notebook demonstrates the use of several advanced deep learning models, each contributing unique strengths to the Autism Spectrum Disorder classification task:
+
+  - **🔍 GoogleNet:** Also known as Inception, GoogleNet is a convolutional neural network architecture that introduces the inception module, allowing the network to consider multiple filter sizes for each convolutional layer.
+
+  - **🔗 ResNet:** Short for Residual Networks, ResNet addresses the vanishing gradient problem in deep networks by using skip connections, allowing gradients to flow through the network more effectively and enabling the training of very deep networks.
+
+  - **⚡ XceptionV3:** Xception is an extension of the Inception architecture that replaces the standard inception modules with depthwise separable convolutions, significantly improving performance and computational efficiency.
+
+  - **🌐 DenseNet:** DenseNet (Densely Connected Convolutional Networks) connects each layer to every other layer in a feed-forward manner, which helps in reusing features, reducing the number of parameters, and improving gradient flow.
+
+  - **⚙️ Xception:** Similar to XceptionV3, this model uses depthwise separable convolutions and is based on the Inception architecture. It's designed to be more efficient and achieve better performance by optimizing the convolution operations.
+
+  - **📱 MobileNet:** MobileNet is a lightweight convolutional neural network architecture optimized for mobile and embedded vision applications, focusing on reducing the computational cost while maintaining performance.
+
+These models were selected for their ability to handle complex image classification tasks effectively, each bringing a unique approach to feature extraction and network efficiency.
+
+**3. 🏋️ Model Training:** The training process includes the following:
+
+  - **🧰 Data Generators:** ImageDataGenerator is used for loading and augmenting the images in batches. This allows efficient handling of large datasets by feeding the model with data in real-time.
+  - **⚙️ Training Parameters:** The model is compiled with specific loss functions and optimizers suitable for multi-class classification, such as categorical_crossentropy and optimizers like Adam.
+  - **📦 Batch Processing:** The model is trained using small batches of data, with the training set providing data for learning and the validation set used to tune the model.
+
+**4. 📊 Model Evaluation:** Post-training, the model's performance is evaluated using:
+
+  - **📈 Accuracy Metrics:** The accuracy of the model on the validation set is calculated to assess its ability to generalize to new data.
+  - **📉 Loss Curves:** The loss during training and validation is plotted to check for overfitting or underfitting.
+    
+**5. 🚀 Model Deployment:** Though the notebook primarily focuses on training and evaluation, deploying the model typically involves:
+
+  - **💾 Saving the Model:** The trained model is saved in a format like .h5 for future use in production environments.
+  - **🖥️ Integration with the Dashboard:** The model is integrated into an interactive dashboard where users can input new data and receive predictions in real-time.
+
+**🛠️ Visual Workflow:**
+A visual representation of this workflow, including data preprocessing, model architecture, training, and evaluation, is presented in the dashboard to offer a clear understanding of the entire process.
+
+
 
 ## 🚀 **User Interactive Dashboard**
 
-### Index Page:
+### **Overview**
 
-![app results page aus](https://github.com/user-attachments/assets/b613994b-cb1a-44d6-9311-3c29573f85e0)
+The User Interactive Dashboard is designed to provide an intuitive interface for exploring the model's performance and classification results. Users can interact with the dashboard to gain insights into the classification outcomes and understand the deep learning model's predictions in a clear and accessible manner.
 
-### Classification Results Page: 
- 
-      Detection Results: Non-Autistic
+### **Index Page**
+
+This is the landing page of the dashboard where users can access the main functionalities. It provides a summary of the model's capabilities and guides the user on how to proceed with classification.
+
+![app index page](https://github.com/user-attachments/assets/4a3e97e8-6325-42cf-9532-3fd9d5ce716e)
+
+### **Classification Results Page:**
+
+ The Classification Results Page displays the model's predictions, detailing whether the input data indicates a diagnosis of Autism Spectrum Disorder (ASD) or Non-Autistic. This page is critical for users looking to understand the model's decision-making process.
+
+#### *Example - Non-Autistic Result* 
+Here, the model's output indicates that the subject is non-autistic. The page visualizes the prediction along with confidence scores and relevant details.
   
 ![app results page na](https://github.com/user-attachments/assets/38193960-ee26-4f87-8f71-1e6b84044f5a)
 
-### Classification Results Page:
-  
-    Detection Results: Autistic
-  
-![app index page](https://github.com/user-attachments/assets/4a3e97e8-6325-42cf-9532-3fd9d5ce716e)
+### **Classification Results Page:**
 
+#### *Example - Autistic Result*
+In this scenario, the model predicts the subject as autistic. Users can view the prediction, analyze contributing factors, and see confidence levels associated with the decision.
+
+![app results page aus](https://github.com/user-attachments/assets/b613994b-cb1a-44d6-9311-3c29573f85e0)
 
 
 ## 🎯 **Conclusion & Future Work**
