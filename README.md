@@ -47,6 +47,29 @@ The dataset was meticulously preprocessed to optimize the training and evaluatio
     - A target image size of 128x128 pixels was set, balancing the trade-off between computational efficiency and preserving critical visual features.
     - This comprehensive setup enabled the effective training and evaluation of multiple deep learning models, ensuring that the models were exposed to a diverse range of image variations during the training phase while maintaining a consistent evaluation process.
 
+## 📈 **Model Workflow**
+![model workflow](https://github.com/user-attachments/assets/36f47ab8-a5cb-4d49-bba0-427da05da1e0)
+
+## 🚀 **User Interactive Dashboard**
+
+### Index Page:
+
+![app results page aus](https://github.com/user-attachments/assets/b613994b-cb1a-44d6-9311-3c29573f85e0)
+
+### Classification Results Page: 
+ 
+      Detection Results: Non-Autistic
+  
+![app results page na](https://github.com/user-attachments/assets/38193960-ee26-4f87-8f71-1e6b84044f5a)
+
+### Classification Results Page:
+  
+    Detection Results: Autistic
+  
+![app index page](https://github.com/user-attachments/assets/4a3e97e8-6325-42cf-9532-3fd9d5ce716e)
+
+
+
 ## 🎯 **Conclusion & Future Work**
 
 This project implemented and compared several deep learning models, with Xception and MobileNet showing the highest accuracy. An interactive dashboard was developed to visualize and explore model performance. 
