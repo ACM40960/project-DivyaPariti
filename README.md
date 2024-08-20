@@ -29,6 +29,9 @@ In this project, we explore the use of deep learning techniques combined with ey
 We analyze an eye-tracking dataset using enhanced image processing techniques to extract critical visual features. This study introduces a hybrid classification approach that integrates multiple deep learning models, including GoogleNet, ResNet, XceptionV3, DenseNet, Xception, and MobileNet, to enhance the diagnostic accuracy of Autism Spectrum Disorder (ASD) detection. These features are processed through a hybrid model that leverages the strengths of multiple deep learning architectures, significantly improving the accuracy of ASD diagnosis. This approach successfully distinguishes ASD cases from typical development (TD) cases, offering a robust tool for early detection and contributing to better treatment strategies.
 
 ## 📊 **Dataset Overview**
+
+![dataset](https://github.com/user-attachments/assets/4f84caae-71bb-4100-83c7-0856b17540c2)
+
 The dataset was meticulously preprocessed to optimize the training and evaluation of the deep learning models. The process involved several key steps:
 
   - **Data Splitting**: The dataset was initially split into training and validation sets, ensuring a balanced representation of classes in each subset.
