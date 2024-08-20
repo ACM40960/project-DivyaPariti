@@ -145,6 +145,19 @@ This project implemented and compared several deep learning models, with Xceptio
 - **Real-World Deployment**: Deploy the system in real-world applications for practical use.
 - **Ensemble Techniques**: Explore ensemble techniques to further boost the accuracy of ASD detection.
 
+## **References**
+
+📚 References
+  1. **National Institute of Mental Health (NIMH)** 🌐. [Autism Spectrum Disorder](https://www.nimh.nih.gov/health/topics/autism-spectrum-disorders-asd).
+  
+  2. **Jana Christina Koehler, Mark Sen Dong, Afton M. Bierlich, Stefanie Fischer, Johanna Spath, Irene Sophia Plank, Nikolaos Koutsouleris & Christine M. Falter-Wagner.** “Machine learning classification of autism spectrum disorder based on reciprocity in naturalistic social interactions.”
+  
+  3. **Md. Mokhlesur Rahman, Opeyemi Lateef Usman, Ravie Chandren Muniyandi, Shahnorbanun Sahran, Suziyani Mohamed, and Rogayah A Razak.** “A Review of Machine Learning Methods of Feature Selection and Classification for Autism Spectrum Disorder.”
+  
+  4. **Md. Zasim Uddin, Md. Arif Shahriar, Md. Nadim Mahamood, Fady Alnajjar, Md. Ileas Pramanik, Md Atiqur Rahman Ahad.** “Deep learning with image-based autism spectrum disorder analysis: A systematic review.”
+  
+  5. **Ibrahim Abdulrab Ahmed, Ebrahim Mohammed Senan, Taha H. Rassem, Mohammed A. H. Ali, Hamzeh Salameh Ahmad Shatnawi, Salwa Mutahar Alwazer, and Mohammed Alshahrani.** “Eye Tracking-Based Diagnosis and Early Detection of Autism Spectrum Disorder Using Machine Learning and Deep Learning Techniques.”
+
 ## 📜 **LICENSE**
 
 This project is licensed under the MIT License. Feel free to use, modify, and distribute this project under the terms of the MIT License.
