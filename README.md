@@ -164,7 +164,7 @@ This project is licensed under the MIT License. Feel free to use, modify, and di
 
 ## 🤝 **Contributions**
 
-Contributions to the project are welcome! If you have any suggestions or questions, please feel free to reach out via email at [divya.pariti@ucdconnect.ie](mailto:divya.pariti@ucdconnect.ie).
+Contributions to the project are welcome! If you have any suggestions or questions, please feel free to reach out via email at [divyatanuja17@gmail.com](mailto:divyatanuja17@gmail.com).
 
 
 
